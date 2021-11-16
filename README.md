@@ -2,13 +2,13 @@
 A react-node app to mint sell nfts. 
 
 ## Quick Start
-Go inside to server directory
+Go inside server directory
 
 ` npm install `   
 
 ` npm run start`
 
-Go inside to client directory
+Go inside client directory
 
 ` npm install `   
 
