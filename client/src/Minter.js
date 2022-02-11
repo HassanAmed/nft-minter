@@ -66,6 +66,7 @@ const Minter = (props) => {
   const [amount, setAmount] = useState("");
   const [isInvalidNetwork, setNetworkState] = useState(false);
   const [isUniSwapIframe, setUniSwapIframeState] = useState(false);
+  const [isMintAllow, setMintAllow] = useState(true);
 
   function addWalletListener() {
     window.ethereum.on("chainChanged", (_chainId) => window.location.reload());
@@ -104,8 +105,12 @@ const Minter = (props) => {
 
   const checkIfValidNetwork = async () => {
     const chainId = await getConnectedChainId();
-    if (chainId !== "0x89" && !isInvalidNetwork) setNetworkState(true);
-    else if (chainId === "0x89" && isInvalidNetwork) setNetworkState(false);
+    if (chainId !== "0x89" && chainId !== "0x1") {
+      setNetworkState(true);
+      setMintAllow(false);
+    }
+    else if (chainId === "0x1") setMintAllow(false);
+    else setNetworkState(false);
   }
 
   const connectWalletPressed = async () => {
@@ -149,7 +154,7 @@ const Minter = (props) => {
             min="1" max="5"
             placeholder="amount of nugfts to mint between 1 - 5"
             onChange={(event) => setAmount(event.target.value)}
-            disabled={isInvalidNetwork}
+            disabled={!isMintAllow}
           />
           {/* <h2>✍️ Description: </h2>
         <input
@@ -159,7 +164,7 @@ const Minter = (props) => {
         /> */}
         </form>
         <div className="mintActionsContainer">
-          <button id="mintButton" disabled={isInvalidNetwork} onClick={onMintPressed}>
+          <button id="mintButton" disabled={!isMintAllow} onClick={onMintPressed}>
             {loading ? "Minting" : "Mint NUGFT"}
           </button>
           <button id="uniswapButton" disabled={isInvalidNetwork} onClick={() => setUniSwapIframeState(true)}>
