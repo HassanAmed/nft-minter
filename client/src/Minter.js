@@ -12,8 +12,7 @@ const Minter = (props) => {
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const [amount, setAmount] = useState("");
 
   function addWalletListener() {
     window.ethereum.on("chainChanged", (_chainId) => window.location.reload());
@@ -21,7 +20,7 @@ const Minter = (props) => {
       window.ethereum.on("accountsChanged", (accounts) => {
         if (accounts.length > 0) {
           setWallet(accounts[0]);
-          setStatus("👆🏽 Enter name and description for you NFT to be minted.");
+          setStatus("👆🏽 Enter amount of NUGFT to mint.");
         } else {
           setWallet("");
           setStatus("🦊 Connect to Metamask using the top right button.");
@@ -56,7 +55,7 @@ const Minter = (props) => {
 
   const onMintPressed = async () => {
     setLoading(true);
-    const { status } = await mintNFT(name, description);
+    const { status } = await mintNFT(amount);
     setStatus(status);
     setLoading(false);
   };
@@ -75,27 +74,27 @@ const Minter = (props) => {
       </button>
 
       <br></br>
-      <h1 id="title">🚀 NFT Minter</h1>
+      <h1 id="title">🚀 NUGFT Minter</h1>
       <p>
-        Simply add name, and description, then press Mint to buy a randomly
-        revealed NFT."
+        5000 Unique NUGFTs (80 MATIC / NUGFT)."
       </p>
       <form>
-        <h2>🖼️ Name: </h2>
+        <h2>Amount: </h2>
         <input
-          type="text"
-          placeholder="e.g. My first NFT!"
-          onChange={(event) => setName(event.target.value)}
+          type="number"
+          min="1" max="5"
+          placeholder="amount of nugfts to mint between 1 - 5"
+          onChange={(event) => setAmount(event.target.value)}
         />
-        <h2>✍️ Description: </h2>
+        {/* <h2>✍️ Description: </h2>
         <input
           type="text"
           placeholder="e.g. A cool description for your asset"
           onChange={(event) => setDescription(event.target.value)}
-        />
+        /> */}
       </form>
       <button id="mintButton" onClick={onMintPressed}>
-        {loading ? "Minting" : "Mint NFT"}
+        {loading ? "Minting" : "Mint NUGFT"}
       </button>
       <p id="status">{status}</p>
     </div>

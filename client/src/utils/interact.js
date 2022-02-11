@@ -1,50 +1,30 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { pinToIPFS } from "./pinata.js";
-import { getRandomImageId } from "./random";
 require("dotenv").config();
 const alchemyKey = process.env.REACT_APP_ALCHEMY_KEY;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 
 const contractABI = require("../contract-abi.json");
-const contractAddress = "0x55c73Db1680967CF2006e6509F7027516f38F856";
+const contractAddress = "0x2cb63c79522b69f59919aa4891d636b998fef9aa";
 
-export const mintNFT = async (name, description) => {
+export const mintNFT = async (amount) => {
   //error handling
-  if (name.trim() === "" || description.trim() === "") {
+  if (amount > 5 || amount < 1) {
     return {
       success: false,
-      status: "❗Please make sure all fields are completed before minting.",
+      status: "❗ Mint amount should be between 1 - 5.",
     };
   }
-
-  //make metadata
-  const metadata = {};
-  metadata.name = name;
-  metadata.id = await getRandomImageId();
-  metadata.description = description;
-
-  //pinata pin request
-  const pinataResponse = await pinToIPFS(metadata);
-  if (!pinataResponse.success || !pinataResponse.pinataUrl) {
-    return {
-      success: false,
-      status: "😢 Something went wrong while uploading your tokenURI.",
-    };
-  }
-  const tokenURI = pinataResponse.pinataUrl;
-
+  const cost = getCostInHex(amount);
   //load smart contract
   window.contract = await new web3.eth.Contract(contractABI, contractAddress);
   const transactionParameters = {
     to: contractAddress, // Required except during contract publications.
     from: window.ethereum.selectedAddress,
-    gas: "0x7A120",
+    gas: "4C4B40",
     // gasPrice: '0x9184e72a000', use metamask suggested
-    value: "B1A2BC2EC50000",
-    data: window.contract.methods
-      .mint(window.ethereum.selectedAddress, tokenURI)
-      .encodeABI(), //make call to NFT smart contract
+    value: cost,
+    data: window.contract.methods.mint(amount).encodeABI(), //make call to NFT smart contract
   };
 
   //sign transaction via Metamask
@@ -56,7 +36,7 @@ export const mintNFT = async (name, description) => {
     return {
       success: true,
       status:
-        "Check out your transaction on Etherscan: https://rinkeby.etherscan.io/tx/" +
+        "Check out your transaction on Polygonscan: https://polygonscan.com/tx/" +
         txHash,
     };
   } catch (error) {
@@ -67,6 +47,11 @@ export const mintNFT = async (name, description) => {
   }
 };
 
+function getCostInHex(amount) {
+  let costInMatic = amount * 0.01;
+  let costInWei = web3.utils.toWei(String(costInMatic));
+  return web3.utils.toHex(costInWei);
+}
 export const connectWallet = async () => {
   if (window.ethereum) {
     try {
@@ -74,7 +59,7 @@ export const connectWallet = async () => {
         method: "eth_requestAccounts",
       });
       const obj = {
-        status: "👆🏽 Enter name and description for you NFT to be minted.",
+        status: "👆🏽 Enter amount of NUGFT to mint.",
         address: addressArray[0],
       };
       return obj;
@@ -112,7 +97,7 @@ export const getCurrentWalletConnected = async () => {
       if (addressArray.length > 0) {
         return {
           address: addressArray[0],
-          status: "👆🏽 Enter name and description for you NFT to be minted.",
+          status: "👆🏽 Enter amount of NUGFT to mint.",
         };
       } else {
         return {
