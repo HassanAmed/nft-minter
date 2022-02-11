@@ -1,10 +1,10 @@
 {
-  "dna": "6e82676d9271148253fed8d8509dcbd7191aed93",
+  "dna": "0fb02020dfb2a0f7437948b51585033ea2ce8b20",
   "name": "#1",
   "description": "Weird Eye Collection",
   "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/1.png",
   "edition": 1,
-  "date": 1637018880920,
+  "date": 1637846874365,
   "attributes": [
     {
       "trait_type": "Background",
@@ -20,7 +20,7 @@
     },
     {
       "trait_type": "Iris",
-      "value": "Small"
+      "value": "Medium"
     },
     {
       "trait_type": "Shine",

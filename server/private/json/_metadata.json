@@ -1,11 +1,11 @@
 [
   {
-    "dna": "6e82676d9271148253fed8d8509dcbd7191aed93",
+    "dna": "0fb02020dfb2a0f7437948b51585033ea2ce8b20",
     "name": "#1",
     "description": "Weird Eye Collection",
     "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/1.png",
     "edition": 1,
-    "date": 1637018880920,
+    "date": 1637846874365,
     "attributes": [
       {
         "trait_type": "Background",
@@ -18,6 +18,44 @@
       {
         "trait_type": "Eye color",
         "value": "Red"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Medium"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Middle"
+      }
+    ]
+  },
+  {
+    "dna": "cfa27eeba852b5a1cc1b861892aa36c65b2df024",
+    "name": "#2",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/2.png",
+    "edition": 2,
+    "date": 1637846874467,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "White"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
       },
       {
         "trait_type": "Iris",
@@ -38,12 +76,12 @@
     ]
   },
   {
-    "dna": "4437eaa2f0c5d2a0d6f5e1a28b225044216ad860",
-    "name": "#2",
+    "dna": "685fb3b9920e5061f95bf0a9f4ce10f8014812ca",
+    "name": "#3",
     "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/2.png",
-    "edition": 2,
-    "date": 1637018881022,
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/3.png",
+    "edition": 3,
+    "date": 1637846874561,
     "attributes": [
       {
         "trait_type": "Background",
@@ -55,7 +93,45 @@
       },
       {
         "trait_type": "Eye color",
-        "value": "Pink"
+        "value": "Cyan"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Medium"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Middle"
+      }
+    ]
+  },
+  {
+    "dna": "f5442e9d373d9d1d93d089e18fdf3584cb4fe44b",
+    "name": "#4",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/4.png",
+    "edition": 4,
+    "date": 1637846874670,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Red"
       },
       {
         "trait_type": "Iris",
@@ -76,88 +152,12 @@
     ]
   },
   {
-    "dna": "33f9c0add9a15304d43d16af3804204b34422565",
-    "name": "#3",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/3.png",
-    "edition": 3,
-    "date": 1637018881123,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "High"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "cfa27eeba852b5a1cc1b861892aa36c65b2df024",
-    "name": "#4",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/4.png",
-    "edition": 4,
-    "date": 1637018881223,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "5f34550a61642e6484671b7b40ca1b6489efcb91",
+    "dna": "8fddd59504b487f8e3c563f08d78b4d3bc644c03",
     "name": "#5",
     "description": "Weird Eye Collection",
     "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/5.png",
     "edition": 5,
-    "date": 1637018881317,
+    "date": 1637846874763,
     "attributes": [
       {
         "trait_type": "Background",
@@ -169,7 +169,7 @@
       },
       {
         "trait_type": "Eye color",
-        "value": "Yellow"
+        "value": "Green"
       },
       {
         "trait_type": "Iris",
@@ -181,21 +181,21 @@
       },
       {
         "trait_type": "Bottom lid",
-        "value": "Middle"
+        "value": "Low"
       },
       {
         "trait_type": "Top lid",
-        "value": "High"
+        "value": "Low"
       }
     ]
   },
   {
-    "dna": "a5b0f61ae3ab735c5f757819c4bd125edf7beddb",
+    "dna": "a0991e6a2473dd5b147b89e4bc0f051a7faf1c53",
     "name": "#6",
     "description": "Weird Eye Collection",
     "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/6.png",
     "edition": 6,
-    "date": 1637018881417,
+    "date": 1637846874865,
     "attributes": [
       {
         "trait_type": "Background",
@@ -207,11 +207,11 @@
       },
       {
         "trait_type": "Eye color",
-        "value": "Pink"
+        "value": "Purple"
       },
       {
         "trait_type": "Iris",
-        "value": "Small"
+        "value": "Medium"
       },
       {
         "trait_type": "Shine",
@@ -219,7 +219,7 @@
       },
       {
         "trait_type": "Bottom lid",
-        "value": "Middle"
+        "value": "High"
       },
       {
         "trait_type": "Top lid",
@@ -233,7 +233,7 @@
     "description": "Weird Eye Collection",
     "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/7.png",
     "edition": 7,
-    "date": 1637018881517,
+    "date": 1637846874969,
     "attributes": [
       {
         "trait_type": "Background",
@@ -266,392 +266,12 @@
     ]
   },
   {
-    "dna": "074e0ab4fd3c74ca4c4271fd9c85379a7101aea3",
+    "dna": "9ad553e4e984b250f06d86975e6d5880d9b20c26",
     "name": "#8",
     "description": "Weird Eye Collection",
     "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/8.png",
     "edition": 8,
-    "date": 1637018881619,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Purple"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Low"
-      }
-    ]
-  },
-  {
-    "dna": "f6decd3758fec287ebba5cda110e0f50afacd3d1",
-    "name": "#9",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/9.png",
-    "edition": 9,
-    "date": 1637018881718,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Medium"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "975d59ebdfe548cf5bf20908a6587c7969156cbc",
-    "name": "#10",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/10.png",
-    "edition": 10,
-    "date": 1637018881815,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "High"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "High"
-      }
-    ]
-  },
-  {
-    "dna": "99ba9bca0c65d4bffd2f47a283c3bebc2a80b575",
-    "name": "#11",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/11.png",
-    "edition": 11,
-    "date": 1637018881910,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Green"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Low"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "fb3e56e7b876049a499544c86accb1026a2d4324",
-    "name": "#12",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/12.png",
-    "edition": 12,
-    "date": 1637018882013,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Low"
-      }
-    ]
-  },
-  {
-    "dna": "a8d6ffa349fd27b3be266c9855ba3708b75f5d80",
-    "name": "#13",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/13.png",
-    "edition": 13,
-    "date": 1637018882106,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Medium"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Low"
-      }
-    ]
-  },
-  {
-    "dna": "a0c714533e4f9cc12c343effc544b411af20973b",
-    "name": "#14",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/14.png",
-    "edition": 14,
-    "date": 1637018882202,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Yellow"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Large"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "High"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "High"
-      }
-    ]
-  },
-  {
-    "dna": "47514f09ccab9ca79ce5cbe357c57e8d2df29cb7",
-    "name": "#15",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/15.png",
-    "edition": 15,
-    "date": 1637018882299,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Purple"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Large"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Low"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "286d53c27fa6498baf7003aa85a5aab0f72e0264",
-    "name": "#16",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/16.png",
-    "edition": 16,
-    "date": 1637018882389,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Red"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Small"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Low"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Low"
-      }
-    ]
-  },
-  {
-    "dna": "ca2911c3430fa7efb5abb380bc7df2baed4bc8d3",
-    "name": "#17",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/17.png",
-    "edition": 17,
-    "date": 1637018882480,
-    "attributes": [
-      {
-        "trait_type": "Background",
-        "value": "Black"
-      },
-      {
-        "trait_type": "Eyeball",
-        "value": "White"
-      },
-      {
-        "trait_type": "Eye color",
-        "value": "Green"
-      },
-      {
-        "trait_type": "Iris",
-        "value": "Medium"
-      },
-      {
-        "trait_type": "Shine",
-        "value": "Shapes"
-      },
-      {
-        "trait_type": "Bottom lid",
-        "value": "Middle"
-      },
-      {
-        "trait_type": "Top lid",
-        "value": "Middle"
-      }
-    ]
-  },
-  {
-    "dna": "66d937e5a25c6a13e5b3df99ce5f44679c528b70",
-    "name": "#18",
-    "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/18.png",
-    "edition": 18,
-    "date": 1637018882576,
+    "date": 1637846875063,
     "attributes": [
       {
         "trait_type": "Background",
@@ -675,7 +295,45 @@
       },
       {
         "trait_type": "Bottom lid",
-        "value": "High"
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Low"
+      }
+    ]
+  },
+  {
+    "dna": "a07a9dad7fa467f9841644fe96e551bec34fca68",
+    "name": "#9",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/9.png",
+    "edition": 9,
+    "date": 1637846875166,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
       },
       {
         "trait_type": "Top lid",
@@ -684,12 +342,12 @@
     ]
   },
   {
-    "dna": "01f773ac1b5a67929370a6ff1ed5cef02cf13625",
-    "name": "#19",
+    "dna": "d47b0a25b0dda3139a44cbb2d27d8975026f7683",
+    "name": "#10",
     "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/19.png",
-    "edition": 19,
-    "date": 1637018882666,
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/10.png",
+    "edition": 10,
+    "date": 1637846875260,
     "attributes": [
       {
         "trait_type": "Background",
@@ -713,7 +371,7 @@
       },
       {
         "trait_type": "Bottom lid",
-        "value": "Low"
+        "value": "Middle"
       },
       {
         "trait_type": "Top lid",
@@ -722,12 +380,12 @@
     ]
   },
   {
-    "dna": "a85bae4a3be104d33b46d3e4ce012b3157ae3628",
-    "name": "#20",
+    "dna": "0de3c8add53f3a8fd2c6a653dad9f3a646255121",
+    "name": "#11",
     "description": "Weird Eye Collection",
-    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/20.png",
-    "edition": 20,
-    "date": 1637018882762,
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/11.png",
+    "edition": 11,
+    "date": 1637846875374,
     "attributes": [
       {
         "trait_type": "Background",
@@ -743,7 +401,273 @@
       },
       {
         "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "High"
+      }
+    ]
+  },
+  {
+    "dna": "82604ee19889e166553f901f9b6d9ae6ecc203eb",
+    "name": "#12",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/12.png",
+    "edition": 12,
+    "date": 1637846875469,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Large"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Low"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Low"
+      }
+    ]
+  },
+  {
+    "dna": "d0c3fc91f45880c4a7ef62b16c2b0ace3df04c2d",
+    "name": "#13",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/13.png",
+    "edition": 13,
+    "date": 1637846875568,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Large"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Low"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "High"
+      }
+    ]
+  },
+  {
+    "dna": "8894598ad4e2c53c243c67f84975e85c477f48ca",
+    "name": "#14",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/14.png",
+    "edition": 14,
+    "date": 1637846875664,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "White"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
         "value": "Medium"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "High"
+      }
+    ]
+  },
+  {
+    "dna": "852c747d919b0f4ab0aad7ebae3b65f53e2f9a59",
+    "name": "#15",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/15.png",
+    "edition": 15,
+    "date": 1637846875751,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "White"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Pink"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Low"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "High"
+      }
+    ]
+  },
+  {
+    "dna": "61e48aad1604691baef6491a4481cb0e3e32ec6c",
+    "name": "#16",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/16.png",
+    "edition": 16,
+    "date": 1637846875852,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Cyan"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Middle"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Middle"
+      }
+    ]
+  },
+  {
+    "dna": "1386d3ebaca3cfdbb8a5af4a740b469f8ec4b95b",
+    "name": "#17",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/17.png",
+    "edition": 17,
+    "date": 1637846875946,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "White"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "High"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Low"
+      }
+    ]
+  },
+  {
+    "dna": "ecd640d97620e4f94f4c0c577bcfe9bf649c98fe",
+    "name": "#18",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/18.png",
+    "edition": 18,
+    "date": 1637846876047,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
       },
       {
         "trait_type": "Shine",
@@ -756,6 +680,82 @@
       {
         "trait_type": "Top lid",
         "value": "Middle"
+      }
+    ]
+  },
+  {
+    "dna": "03c024dce534bda45bd3171bd31ab48efca2c608",
+    "name": "#19",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/19.png",
+    "edition": 19,
+    "date": 1637846876148,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Pink"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Small"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "Low"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Middle"
+      }
+    ]
+  },
+  {
+    "dna": "a18835e84d2a2b875903c3e8c0486c5c76b54762",
+    "name": "#20",
+    "description": "Weird Eye Collection",
+    "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/20.png",
+    "edition": 20,
+    "date": 1637846876237,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Eyeball",
+        "value": "White"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Iris",
+        "value": "Medium"
+      },
+      {
+        "trait_type": "Shine",
+        "value": "Shapes"
+      },
+      {
+        "trait_type": "Bottom lid",
+        "value": "High"
+      },
+      {
+        "trait_type": "Top lid",
+        "value": "Low"
       }
     ]
   }

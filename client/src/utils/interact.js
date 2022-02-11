@@ -58,6 +58,8 @@ export const connectWallet = async () => {
       const addressArray = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
+      const chainId = await window.ethereum.request({ method: "eth_chainId" });
+      console.log("connected", chainId);
       const obj = {
         status: "👆🏽 Enter amount of NUGFT to mint.",
         address: addressArray[0],

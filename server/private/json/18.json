@@ -1,10 +1,10 @@
 {
-  "dna": "66d937e5a25c6a13e5b3df99ce5f44679c528b70",
+  "dna": "ecd640d97620e4f94f4c0c577bcfe9bf649c98fe",
   "name": "#18",
   "description": "Weird Eye Collection",
   "image": "ipfs://QmdMetovstYH9FEBJi77ZXVszEBpNsnA1MCemcQxRG26CJ/18.png",
   "edition": 18,
-  "date": 1637018882576,
+  "date": 1637846876047,
   "attributes": [
     {
       "trait_type": "Background",
@@ -12,11 +12,11 @@
     },
     {
       "trait_type": "Eyeball",
-      "value": "White"
+      "value": "Red"
     },
     {
       "trait_type": "Eye color",
-      "value": "Cyan"
+      "value": "Yellow"
     },
     {
       "trait_type": "Iris",
