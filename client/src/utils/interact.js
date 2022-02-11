@@ -48,7 +48,7 @@ export const mintNFT = async (amount) => {
 };
 
 function getCostInHex(amount) {
-  let costInMatic = amount * 0.01;
+  let costInMatic = amount * 75;
   let costInWei = web3.utils.toWei(String(costInMatic));
   return web3.utils.toHex(costInWei);
 }
