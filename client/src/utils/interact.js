@@ -52,14 +52,18 @@ function getCostInHex(amount) {
   let costInWei = web3.utils.toWei(String(costInMatic));
   return web3.utils.toHex(costInWei);
 }
+
+export const getConnectedChainId = async () => {
+  const chainId = await window.ethereum.request({ method: "eth_chainId" });
+  return chainId;
+}
+
 export const connectWallet = async () => {
   if (window.ethereum) {
     try {
       const addressArray = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
-      const chainId = await window.ethereum.request({ method: "eth_chainId" });
-      console.log("connected", chainId);
       const obj = {
         status: "👆🏽 Enter amount of NUGFT to mint.",
         address: addressArray[0],
