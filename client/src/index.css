@@ -50,6 +50,10 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 #title {
   padding-top: 32px;
