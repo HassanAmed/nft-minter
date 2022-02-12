@@ -21,7 +21,7 @@ const InvalidNetworkModal = ({ showErrorModal }) => (
     </Modal.Header>
     <Modal.Body>
       <span style={{ color: 'red' }}>
-        Please select Ploygon Mainnet from Metamast Network Collection in order to proceed further.
+        Please select Ploygon from Metamask Network in order to proceed further.
       </span>
     </Modal.Body>
   </Modal>
@@ -143,9 +143,9 @@ const Minter = (props) => {
         </button>
 
         <br></br>
-        <h1 id="title">🚀 NUGFT Minter</h1>
+        <h1 id="title">🚀 NUGFT Presale 🔥</h1>
         <p>
-          5000 Unique NUGFTs (80 MATIC / NUGFT)."
+          5000 Unique NUGFTs Strands (75 MATIC / NUGFT)
         </p>
         <form>
           <h2>Amount: </h2>

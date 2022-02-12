@@ -5,7 +5,7 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 
 const contractABI = require("../contract-abi.json");
-const contractAddress = "0x2cb63c79522b69f59919aa4891d636b998fef9aa";
+const contractAddress = "0x2cb63c79522B69f59919aa4891d636b998FeF9Aa";
 
 export const mintNFT = async (amount) => {
   //error handling
@@ -35,9 +35,7 @@ export const mintNFT = async (amount) => {
     });
     return {
       success: true,
-      status:
-        "Check out your transaction on Polygonscan: https://polygonscan.com/tx/" +
-        txHash,
+      status: `Check out your transaction on Polygonscan: https://polygonscan.com/tx/${txHash}`,
     };
   } catch (error) {
     return {
@@ -53,10 +51,18 @@ function getCostInHex(amount) {
   return web3.utils.toHex(costInWei);
 }
 
+export const getTotalSupply = async () => {
+  window.contract = await new web3.eth.Contract(contractABI, contractAddress);
+  const ts = await window.contract.methods
+    .totalSupply()
+    .call({ from: window.ethereum.selectedAddress });
+  return ts;
+};
+
 export const getConnectedChainId = async () => {
   const chainId = await window.ethereum.request({ method: "eth_chainId" });
   return chainId;
-}
+};
 
 export const connectWallet = async () => {
   if (window.ethereum) {
