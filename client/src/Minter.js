@@ -6,7 +6,8 @@ import {
   connectWallet,
   getCurrentWalletConnected,
   mintNFT,
-  getConnectedChainId
+  getConnectedChainId,
+  getTotalSupply
 } from "./utils/interact.js";
 
 const InvalidNetworkModal = ({ showErrorModal }) => (
@@ -22,6 +23,24 @@ const InvalidNetworkModal = ({ showErrorModal }) => (
     <Modal.Body>
       <span style={{ color: 'red' }}>
         Please select Ploygon from Metamask Network in order to proceed further.
+      </span>
+    </Modal.Body>
+  </Modal>
+)
+
+const SupplyFinishedModal = ({ showErrorModal }) => (
+  <Modal
+    show={showErrorModal}
+    onHide={() => { }}
+    backdrop="static"
+    keyboard={false}
+  >
+    <Modal.Header>
+      <Modal.Title>Sold out!</Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
+      <span style={{ color: 'red' }}>
+        Presale sold out. We'll be back soon with more Nugfts. 
       </span>
     </Modal.Body>
   </Modal>
@@ -67,6 +86,8 @@ const Minter = (props) => {
   const [isInvalidNetwork, setNetworkState] = useState(false);
   const [isUniSwapIframe, setUniSwapIframeState] = useState(false);
   const [isMintAllow, setMintAllow] = useState(true);
+  const [currentSupply, setCurrentSupply] = useState(500);
+  const [isSupplyFinished, setSupplyFinished] = useState(false);
 
   function addWalletListener() {
     window.ethereum.on("chainChanged", (_chainId) => window.location.reload());
@@ -101,6 +122,13 @@ const Minter = (props) => {
     setStatus(status);
     addWalletListener();
     checkIfValidNetwork();
+    getTotalSupply().then(result => {
+        const cs = 500 - result;
+        setCurrentSupply(cs);
+        setSupplyFinished(cs===0);
+      }
+    );
+    
   }, []);
 
   const checkIfValidNetwork = async () => {
@@ -147,6 +175,9 @@ const Minter = (props) => {
         <p>
           5000 Unique NUGFTs Strands (75 MATIC / NUGFT)
         </p>
+        <p>
+          {currentSupply} out of 500 left for presale!
+        </p>
         <form>
           <h2>Amount: </h2>
           <input
@@ -174,6 +205,7 @@ const Minter = (props) => {
         <p id="status">{status}</p>
       </div>
       <InvalidNetworkModal showErrorModal={isInvalidNetwork} />
+      <SupplyFinishedModal showErrorModal={isSupplyFinished} />
       <UniSwapIframe isUniSwapIframe={isUniSwapIframe} setUniSwapIframeState={setUniSwapIframeState} />
     </>
   );
