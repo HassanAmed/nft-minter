@@ -1,19 +1,19 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Modal } from 'react-bootstrap';
+import { Modal } from "react-bootstrap";
 import {
   connectWallet,
   getCurrentWalletConnected,
   mintNFT,
   getConnectedChainId,
-  getTotalSupply
+  getTotalSupply,
 } from "./utils/interact.js";
 
 const InvalidNetworkModal = ({ showErrorModal }) => (
   <Modal
     show={showErrorModal}
-    onHide={() => { }}
+    onHide={() => {}}
     backdrop="static"
     keyboard={false}
   >
@@ -21,17 +21,17 @@ const InvalidNetworkModal = ({ showErrorModal }) => (
       <Modal.Title>Invalid Network</Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <span style={{ color: 'red' }}>
+      <span style={{ color: "red" }}>
         Please select Ploygon from Metamask Network in order to proceed further.
       </span>
     </Modal.Body>
   </Modal>
-)
+);
 
 const SupplyFinishedModal = ({ showErrorModal }) => (
   <Modal
     show={showErrorModal}
-    onHide={() => { }}
+    onHide={() => {}}
     backdrop="static"
     keyboard={false}
   >
@@ -39,12 +39,12 @@ const SupplyFinishedModal = ({ showErrorModal }) => (
       <Modal.Title>Sold out!</Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <span style={{ color: 'red' }}>
-        Presale sold out. We'll be back soon with more Nugfts. 
+      <span style={{ color: "red" }}>
+        Presale sold out. Get ready to catch our public sale on Opensea.
       </span>
     </Modal.Body>
   </Modal>
-)
+);
 
 const UniSwapIframe = ({ isUniSwapIframe, setUniSwapIframeState }) => (
   <Modal
@@ -65,17 +65,17 @@ const UniSwapIframe = ({ isUniSwapIframe, setUniSwapIframeState }) => (
         title="uniswap-iframe"
         style={{
           border: "0",
-          margin: '0 auto',
+          margin: "0 auto",
           marginBottom: ".5rem",
           display: "block",
           borderRadius: "10px",
           maxWidth: "960px",
-          minWidth: "300px"
+          minWidth: "300px",
         }}
       />
     </Modal.Body>
   </Modal>
-)
+);
 
 const Minter = (props) => {
   //State variables
@@ -122,13 +122,11 @@ const Minter = (props) => {
     setStatus(status);
     addWalletListener();
     checkIfValidNetwork();
-    getTotalSupply().then(result => {
-        const cs = 500 - result;
-        setCurrentSupply(cs);
-        setSupplyFinished(cs===0);
-      }
-    );
-    
+    getTotalSupply().then((result) => {
+      const cs = 500 - result;
+      setCurrentSupply(0);
+      setSupplyFinished(cs < 250);
+    });
   }, []);
 
   const checkIfValidNetwork = async () => {
@@ -136,10 +134,9 @@ const Minter = (props) => {
     if (chainId !== "0x89" && chainId !== "0x1") {
       setNetworkState(true);
       setMintAllow(false);
-    }
-    else if (chainId === "0x1") setMintAllow(false);
+    } else if (chainId === "0x1") setMintAllow(false);
     else setNetworkState(false);
-  }
+  };
 
   const connectWalletPressed = async () => {
     if (isInvalidNetwork) return;
@@ -159,7 +156,11 @@ const Minter = (props) => {
   return (
     <>
       <div className="Minter">
-        <button id="walletButton" disabled={isInvalidNetwork} onClick={connectWalletPressed}>
+        <button
+          id="walletButton"
+          disabled={isInvalidNetwork}
+          onClick={connectWalletPressed}
+        >
           {walletAddress.length > 0 ? (
             "Connected: " +
             String(walletAddress).substring(0, 6) +
@@ -172,17 +173,14 @@ const Minter = (props) => {
 
         <br></br>
         <h1 id="title">🚀 NUGFT Presale 🔥</h1>
-        <p>
-          5000 Unique NUGFTs Strands (75 MATIC / NUGFT)
-        </p>
-        <p>
-          {currentSupply} out of 500 left for presale!
-        </p>
+        <p>5000 Unique NUGFTs Strands (75 MATIC / NUGFT)</p>
+        <p>{currentSupply} out of 500 left for presale!</p>
         <form>
           <h2>Amount: </h2>
           <input
             type="number"
-            min="1" max="5"
+            min="1"
+            max="5"
             placeholder="amount of nugfts to mint between 1 - 5"
             onChange={(event) => setAmount(event.target.value)}
             disabled={!isMintAllow}
@@ -195,10 +193,18 @@ const Minter = (props) => {
         /> */}
         </form>
         <div className="mintActionsContainer">
-          <button id="mintButton" disabled={!isMintAllow} onClick={onMintPressed}>
+          <button
+            id="mintButton"
+            disabled={!isMintAllow}
+            onClick={onMintPressed}
+          >
             {loading ? "Minting" : "Mint NUGFT"}
           </button>
-          <button id="uniswapButton" disabled={isInvalidNetwork} onClick={() => setUniSwapIframeState(true)}>
+          <button
+            id="uniswapButton"
+            disabled={isInvalidNetwork}
+            onClick={() => setUniSwapIframeState(true)}
+          >
             Swap Tokens
           </button>
         </div>
@@ -206,7 +212,10 @@ const Minter = (props) => {
       </div>
       <InvalidNetworkModal showErrorModal={isInvalidNetwork} />
       <SupplyFinishedModal showErrorModal={isSupplyFinished} />
-      <UniSwapIframe isUniSwapIframe={isUniSwapIframe} setUniSwapIframeState={setUniSwapIframeState} />
+      <UniSwapIframe
+        isUniSwapIframe={isUniSwapIframe}
+        setUniSwapIframeState={setUniSwapIframeState}
+      />
     </>
   );
 };
